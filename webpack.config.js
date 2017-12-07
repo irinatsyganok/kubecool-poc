@@ -8,14 +8,6 @@ module.exports = {
         filename: 'bundle.js',
         publicPath: '/build/'
     },
-    plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-        minimize: true,
-        compress: {
-            warnings: false
-        }
-    })
-  ],
     module: {
         loaders: [
             {

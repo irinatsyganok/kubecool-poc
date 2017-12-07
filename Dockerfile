@@ -5,7 +5,9 @@ WORKDIR /work
 COPY package*.json ./
 RUN npm install
 
-COPY . $WORKDIR
+COPY . .
 
+# RUN npm run build
 EXPOSE 8080
-RUN npm run build
+
+CMD ["npm", "start"]
